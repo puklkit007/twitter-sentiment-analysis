@@ -29,6 +29,7 @@ If this goes well you have successfully installed TwitterR.
 Things to remember for sentiment analysis:
 
 We can perform some basic operations on the data  like GSUB for cleaning
+
 tweet = gsub('https://','',tweet) # removes https://
 tweet = gsub('http://','',tweet) # removes http://
 tweet = gsub('[[:punct:]]', '', tweet) # removes punctuation 
