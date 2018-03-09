@@ -15,6 +15,7 @@ Now you have to create a Twitter account if you don’t have one and then create
 After creating the app go to Keys and Access Tokens. There you will find the Consumer keys and Consumer secret. Now for access token and access secret you have to scroll down and find the button genrerate token access click on it and that will generate your access token copy both token and secret. Now keep these 4 token and keys somewhere because we will be needing them later.
 
 # Set API Keys
+
 # FILL THESE KEYS
 
 api_key <- "   "
@@ -28,6 +29,8 @@ access_token_secret <- "  "
 setup_twitter_oauth(api_key, api_secret, access_token, access_token_secret)
 
 If this goes well you have successfully installed TwitterR.
+
+
 
 
 
