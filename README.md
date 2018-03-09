@@ -1,4 +1,5 @@
 # twitter-sentiment-analysis
+
 Analysis on Twitter data using R and PIG to know the sentiments of public towards a particular topic. Helps in knowing the recent trends and its positive and negative effects.
 
 Installing TwitterR project:
@@ -15,9 +16,13 @@ After creating the app go to Keys and Access Tokens. There you will find the Con
 
 # Set API Keys
 # FILL THESE KEYS
+
 api_key <- "   "
+
 api_secret <- "  "
+
 access_token <- "  "
+
 access_token_secret <- "  "
 
 setup_twitter_oauth(api_key, api_secret, access_token, access_token_secret)
@@ -31,10 +36,15 @@ Things to remember for sentiment analysis:
 We can perform some basic operations on the data  like GSUB for cleaning
 
 tweet = gsub('https://','',tweet) # removes https://
+
 tweet = gsub('http://','',tweet) # removes http://
+
 tweet = gsub('[[:punct:]]', '', tweet) # removes punctuation 
+
 tweet = gsub('[[:cntrl:]]', '', tweet) # removes control characters
+
 tweet = gsub('\\d+', '', tweet)	# removes numbers
+
 ----
 TOKENIZE- It splits the string
 FLATTEN – It remove and brackets and expand the content inside it.
@@ -45,9 +55,13 @@ this command will create a table with words splitted.
 
 Ex: 
 2,this is me
+
 Will become
+
 2,this is me,this
+
 2,this is me,is
+
 2,this is me,me
 ------------
 Replicated Joins: These kind of joins are used when there are many small joins that are small enough to fit into the main memory, in such cases we will use replicated joins.
